@@ -22,6 +22,7 @@
         <p>Sabia que Rick and Morty foi inspirado em De Volta para o Futuro? Confira mais curiosidades abaixo!</p>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/TLWr1L--ykI?si=T2rSPiQN8glFmlOp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
         <h3>Envie sua curiosidade</h3>
         <form>
             <label for="titulo">Título:</label>
@@ -30,12 +31,37 @@
             <textarea id="descricao" name="descricao" required></textarea><br>
             <label for="nome">Seu nome:</label>
             <input type="text" id="nome" name="nome"><br>
-            <label for="Data">Coloque a data:</label>
-            <input type="week" name="" id="data" name="data"><br>
+            <label for="data">Coloque a data:</label>
+            <input type="week" id="data" name="data"><br>
             <label for="email">Coloque o email:</label>
-            <input type="email" name="" id="">
+            <input type="email" id="email" name="email"><br>
             <input type="submit" value="Enviar">
+        </form>
+
+        <h3>Cadastro de Feedback</h3>
+        <form>
+            <label for="nomeFeedback">Nome:</label>
+            <input type="text" id="nomeFeedback" name="nomeFeedback" required><br>
             
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required><br>
+            
+            <label for="opiniao">Opinião:</label>
+            <textarea id="opiniao" name="opiniao" required></textarea><br>
+            
+            <label for="favorito">Personagem Favorito:</label>
+            <select id="favorito" name="favorito">
+                <option value="rick">Rick Sanchez</option>
+                <option value="morty">Morty Smith</option>
+                <option value="summer">Summer Smith</option>
+                <option value="beth">Beth Smith</option>
+                <option value="jerry">Jerry Smith</option>
+            </select><br>
+            
+            <label for="notificar">Gostaria de receber novidades?</label>
+            <input type="checkbox" id="notificar" name="notificar"><br>
+            
+            <input type="submit" value="Enviar Feedback">
         </form>
     </main>
 
